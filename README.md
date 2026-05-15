@@ -69,13 +69,13 @@ Projeto_Servidor_API/
 
 ## 🌐 Rotas da API
 
-| Método - Rota - Descrição |
-
-| GET - `/movies` - Lista todos os filmes |
-| GET - `/movies?genre=Action` - Filtra filmes por gênero |
-| GET - `/movies/{id}` - Retorna um filme pelo ID |
-| POST - `/movies` - Cadastra um novo filme |
-| GET - `/genres` - Lista os gêneros disponíveis |
+| Método | Rota | Descrição |
+| :--- | :--- | :--- |
+| GET | `/movies` | Lista todos os filmes |
+| GET | `/movies?genre=Action` | Filtra filmes por gênero |
+| GET | `/movies/{id}` | Retorna um filme pelo ID |
+| POST | `/movies` | Cadastra um novo filme |
+| GET | `/genres` | Lista os géneros disponíveis |
 
 ## 👥 Integrantes
  
