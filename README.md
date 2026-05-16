@@ -39,6 +39,7 @@ O projeto utiliza **ambiente virtual (venv)** para isolamento de dependências.
    ```bash
    cd server
    uvicorn app.main:app --reload --port 8000
+   # acesse http://localhost:8000/docs no navegador para testar as rotas
    ```
 7. Em outro terminal, execute o cliente.
    ```bash
