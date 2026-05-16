@@ -12,21 +12,21 @@ Este checklist detalha as etapas de construção do servidor e cliente para o mi
 
 ## 🔵 2. Dados e Modelagem (Pessoa A — Servidor)
 
-- [ ] **CSV de Filmes:** Criar `server/data/movies.csv` com colunas `id`, `title`, `genre`, `year`, `rating`, `description` e ao menos 15 filmes.
-- [ ] **Leitura do CSV:** Carregar o CSV com `pandas` na inicialização da aplicação como variável global.
-- [ ] **Modelo Pydantic `MovieIn`:** Implementar modelo de entrada com campos `title`, `genre`, `year`, `rating` e `description` para validação do POST.
+- [x] **CSV de Filmes:** Criar `server/data/movies.csv` com colunas `id`, `title`, `genre`, `year`, `rating`, `description` e ao menos 15 filmes.
+- [x] **Leitura do CSV:** Carregar o CSV com `pandas` na inicialização da aplicação como variável global.
+- [x] **Modelo Pydantic `MovieIn`:** Implementar modelo de entrada com campos `title`, `genre`, `year`, `rating` e `description` para validação do POST.
 
 ## 🟡 3. Implementação do Servidor — Rotas (Pessoa A)
 
-- [ ] **`GET /movies`:** Retornar todos os filmes como lista de dicts.
-  - [ ] Suportar query param opcional `?genre=` para filtrar por gênero.
-  - [ ] Retornar lista vazia quando nenhum resultado for encontrado.
-- [ ] **`GET /movies/{id}`:** Retornar um filme pelo ID.
-  - [ ] Lançar `HTTPException 404` com mensagem amigável se não encontrado.
-- [ ] **`POST /movies`:** Receber body `MovieIn`, gerar novo ID automático e adicionar ao DataFrame.
-  - [ ] Persistir a alteração salvando o CSV atualizado em disco.
-  - [ ] Retornar o filme criado com status HTTP 201.
-- [ ] **`GET /genres`:** Retornar lista de gêneros únicos presentes no CSV.
+- [x] **`GET /movies`:** Retornar todos os filmes como lista de dicts.
+  - [x] Suportar query param opcional `?genre=` para filtrar por gênero.
+  - [x] Retornar lista vazia quando nenhum resultado for encontrado.
+- [x] **`GET /movies/{id}`:** Retornar um filme pelo ID.
+  - [x] Lançar `HTTPException 404` com mensagem amigável se não encontrado.
+- [x] **`POST /movies`:** Receber body `MovieIn`, gerar novo ID automático e adicionar ao DataFrame.
+  - [x] Persistir a alteração salvando o CSV atualizado em disco.
+  - [x] Retornar o filme criado com status HTTP 201.
+- [x] **`GET /genres`:** Retornar lista de gêneros únicos presentes no CSV.
 
 ## 🟠 4. Implementação do Cliente (Pessoa B)
 
@@ -41,7 +41,7 @@ Este checklist detalha as etapas de construção do servidor e cliente para o mi
 ## ⚪ 5. Robustez e Boas Práticas
 
 - [ ] **Tratamento de erros no cliente:** Envolver chamadas HTTP em `try/except` para tratar falhas de conexão.
-- [ ] **Tratamento de erros no servidor:** Garantir que IDs inválidos (não numéricos) retornem 422 automaticamente via FastAPI.
+- [x] **Tratamento de erros no servidor:** Garantir que IDs inválidos (não numéricos) retornem 422 automaticamente via FastAPI.
 - [ ] **Variáveis de ambiente:** Garantir que nenhuma URL ou configuração esteja hardcoded — tudo via `.env`.
 
 ## 🔴 6. Finalização e Entrega
