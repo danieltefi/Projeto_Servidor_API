@@ -30,28 +30,28 @@ Este checklist detalha as etapas de construção do servidor e cliente para o mi
 
 ## 🟠 4. Implementação do Cliente (Pessoa B)
 
-- [ ] **Configuração:** Ler `API_BASE_URL` do `.env` com fallback para `http://localhost:8000`.
-- [ ] **`listar_generos()`:** Chamar `GET /genres` e imprimir os gêneros disponíveis.
-- [ ] **`listar_filmes(genre=None)`:** Chamar `GET /movies` (com ou sem filtro) e imprimir filmes formatados com título, ano, gênero, nota e descrição.
-- [ ] **`buscar_filme(id)`:** Chamar `GET /movies/{id}` e imprimir detalhes completos.
-  - [ ] Tratar erro 404 com mensagem amigável ao usuário.
-- [ ] **`adicionar_filme()`:** Chamar `POST /movies` com dados de um novo filme e confirmar criação com o ID gerado.
-- [ ] **Bloco `main`:** Executar todas as funções em sequência, demonstrando todas as rotas.
+- [x] **Configuração:** Ler `API_BASE_URL` do `.env` com fallback para `http://localhost:8000`.
+- [x] **`listar_generos()`:** Chamar `GET /genres` e imprimir os gêneros disponíveis.
+- [x] **`listar_filmes(genre=None)`:** Chamar `GET /movies` (com ou sem filtro) e imprimir filmes formatados com título, ano, gênero, nota e descrição.
+- [x] **`buscar_filme(id)`:** Chamar `GET /movies/{id}` e imprimir detalhes completos.
+  - [x] Tratar erro 404 com mensagem amigável ao usuário.
+- [x] **`adicionar_filme()`:** Chamar `POST /movies` com dados de um novo filme e confirmar criação com o ID gerado.
+- [x] **Bloco `main`:** Executar todas as funções em sequência, demonstrando todas as rotas.
 
 ## ⚪ 5. Robustez e Boas Práticas
 
-- [ ] **Tratamento de erros no cliente:** Envolver chamadas HTTP em `try/except` para tratar falhas de conexão.
+- [x] **Tratamento de erros no cliente:** Envolver chamadas HTTP em `try/except` para tratar falhas de conexão.
 - [x] **Tratamento de erros no servidor:** Garantir que IDs inválidos (não numéricos) retornem 422 automaticamente via FastAPI.
-- [ ] **Variáveis de ambiente:** Garantir que nenhuma URL ou configuração esteja hardcoded — tudo via `.env`.
+- [x] **Variáveis de ambiente:** Garantir que nenhuma URL ou configuração esteja hardcoded — tudo via `.env`.
 
 ## 🔴 6. Finalização e Entrega
 
-- [ ] **Colaboração Git:** Pessoa B deve contribuir via Pull Request da branch `client` → `main`.
-- [ ] **Histórico de PR:** Garantir que o Pull Request esteja visível no repositório antes da entrega.
+- [x] **Colaboração Git:** Pessoa B deve contribuir via Pull Request da branch `client` → `main`.
+- [x] **Histórico de PR:** Garantir que o Pull Request esteja visível no repositório antes da entrega.
 - [x] **README.md:** Escrever instruções claras de como rodar servidor e cliente, listar as rotas disponíveis e identificar os integrantes.
-- [ ] **Commits regulares:** Realizar entregas incrementais para evidenciar o desenvolvimento ao longo do tempo.
+- [x] **Commits regulares:** Realizar entregas incrementais para evidenciar o desenvolvimento ao longo do tempo.
 - [x] **Link do repositório:** Confirmar que o repositório está público e o link funciona antes de entregar.
 
 ---
 
-*Status Atual: 🚧 Em andamento*
+*Status Atual: 🚧 Finalizado*

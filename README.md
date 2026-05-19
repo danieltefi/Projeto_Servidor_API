@@ -85,4 +85,4 @@ Projeto_Servidor_API/
 
 ## 🚧 Status do Projeto
  
-**Em andamento**
+**Finalizado**
