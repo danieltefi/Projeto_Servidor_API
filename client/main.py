@@ -69,3 +69,24 @@ def adicionar_filme():
         print(f"Filme adicionado com sucesso! ID gerado: {criado['id']}")
     except requests.exceptions.ConnectionError:
         print("Erro: não foi possível conectar ao servidor.")
+
+
+if __name__ == "__main__":
+    print("=== CATÁLOGO DE FILMES ===\n")
+
+    listar_generos()
+
+    print("\n--- Todos os filmes ---")
+    listar_filmes()
+
+    print("\n--- Filmes de Ação ---")
+    listar_filmes(genre="Action")
+
+    print("\n--- Buscando filme ID 3 ---")
+    buscar_filme(3)
+
+    print("\n--- Buscando filme inexistente (ID 999) ---")
+    buscar_filme(999)
+
+    print("\n--- Adicionando novo filme ---")
+    adicionar_filme()
